@@ -3,8 +3,17 @@ import { Play, CheckCircle2, Flame, Users } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative bg-theme-bg overflow-hidden min-h-screen">
+    <section id="hero" className="relative bg-theme-bg overflow-hidden pb-32">
       
+      {/* --- Global Background Ambience --- */}
+      <div className="absolute top-0 right-0 w-full h-full pointer-events-none z-0">
+        <img 
+          src="img/fundo-medico.png" 
+          alt="Background Medical" 
+          className="absolute bottom-[650px] left-[650px] w-[1000px] z-100 h-auto object-cover opacity-50"
+        />
+      </div>
+
       {/* --- Global Background Ambience --- */}
       <div className="absolute top-0 right-0 w-[80%] h-[1200px] bg-gradient-radial from-theme-purple/20 to-transparent opacity-60 blur-[120px] pointer-events-none translate-x-1/3 -translate-y-1/4 z-0"></div>
       
@@ -46,13 +55,10 @@ const Hero: React.FC = () => {
             {/* Giant Title: ACELERA */}
             <div className="relative mb-12 lg:mb-24">
               <h1 className="text-6xl sm:text-7xl lg:text-[8rem] font-display font-black text-white italic tracking-tighter leading-[0.85] text-glow filter drop-shadow-[0_0_30px_rgba(255,255,255,0.3)] transform -skew-x-6">
-                <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-gray-100 to-gray-400">
+                <span className="bg-clip-text color-#ffff bg-gradient-to-b from-white via-gray-100 to-gray-400">
                   ACELERA
                 </span>
               </h1>
-              <div className="flex items-center gap-4 mt-2 lg:ml-2">
-                 <span className="text-4xl lg:text-5xl font-light text-white tracking-[0.2em] font-sans">2026</span>
-              </div>
             </div>
 
           </div>
@@ -60,7 +66,7 @@ const Hero: React.FC = () => {
           {/* Right Column: Couple Image */}
           <div className="relative h-[400px] lg:h-[700px] lg:absolute lg:top-0 lg:right-0 lg:w-[55%] lg:-mr-10 z-10 pointer-events-none">
             <img 
-              src="https://images.unsplash.com/photo-1563237023-b1e970526dcb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              src="img/hero-medicos.png" 
               alt="Medical Professionals" 
               className="w-full h-full object-cover lg:object-contain object-top mask-gradient-b lg:mask-none"
               style={{

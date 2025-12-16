@@ -4,10 +4,10 @@ import { STRATEGY_STEPS, SERVICES } from '../constants';
 
 const Strategy: React.FC = () => {
   return (
-    <section id="strategy" className="py-24 bg-[#100820] relative overflow-hidden">
+    <section id="strategy" className=" h-full pt-48 pb-24 bg-[#100820] relative overflow-hidden">
       
       {/* Background Shape (Keeping existing ambience) */}
-      <div className="absolute top-0 right-0 w-full h-[120%] bg-[#1a0f2e] rounded-tl-[100px] transform skew-y-3 -z-10 translate-y-20"></div>
+       <div className="absolute top-0 right-0 w-full h-[120%] bg-[#1a0f2e] rounded-tl-[100px] transform skew-y-3 -z-10 translate-y-20"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

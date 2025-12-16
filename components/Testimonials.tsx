@@ -54,13 +54,12 @@ const SocialProof: React.FC = () => {
         <div className="grid lg:grid-cols-12 gap-8 items-center mb-24 relative">
           
           {/* Left: Group Photo (Grayscale & Masked) */}
-          <div className="lg:col-span-5 relative h-[300px] lg:h-[500px] w-full hidden lg:block">
-            <div className="absolute inset-0 -ml-20">
+          <div className="lg:col-span-5 w-[1250px] h-[650px] flex justify-center items-center relative py-10">
+            <div className="relative w-[1250px] h-[650px] bg-theme-surface border border-theme-purple/50 rounded-3xl p-4 shadow-[0_0_0_rgba(147,51,234,0.3)]">
                <img 
-                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 src="img/pessoas-segredo.png" 
                  alt="Team" 
-                 className="w-full h-full object-cover grayscale mix-blend-luminosity opacity-40 mask-gradient-r"
-                 style={{maskImage: 'linear-gradient(to right, black 0%, transparent 100%)'}} 
+                 className=" relative bottom-[195px]  w-[1000px] h-auto object-cover rounded-2xl" 
                />
             </div>
           </div>
