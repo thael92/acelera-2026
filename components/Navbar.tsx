@@ -60,8 +60,8 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Dropdown */}
-      <div className={`md:hidden absolute top-full left-0 w-full bg-theme-bg border-b border-white/10 transition-all duration-300 ease-in-out transform origin-top ${isOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 h-0'}`}>
-        <div className="px-4 py-6 space-y-4 flex flex-col items-center">
+      <div className={`md:hidden fixed inset-0 z-40 bg-theme-bg/95 backdrop-blur-xl transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
+        <div className="h-full flex flex-col justify-center items-center space-y-8 p-6">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.label}
